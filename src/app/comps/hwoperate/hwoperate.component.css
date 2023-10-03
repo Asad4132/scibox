@@ -1,0 +1,116 @@
+#bgimg{
+    display: none;
+}
+.aboutland{
+    left: 0px;
+    top: 0px;
+    height: 655px;
+    background:  url('/assets/hwbg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.abttext{
+    color: white;
+    margin-left: 10%;
+    padding-top: 10%;
+    width: 40%;
+}
+.ourstory{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: max-content;
+    background-color: #000000;
+ align-items: center;
+}
+.story{
+    width: 40%;
+    color: white;
+}
+#o1{
+    position: absolute;
+    margin-top: -22px;
+    margin-left: -31px;
+}
+.store2{
+    margin-top: -100px;
+}
+.whatwe{
+    text-align: center;
+    color: white;
+    padding-bottom: 100px;
+}
+#rope1{
+    margin-left: 10%;
+}
+#hwimg3{
+    margin-left: 10%;
+    width: 80%;
+    margin-bottom: 100px;
+}
+
+#rope2{
+    margin-top: -118px;
+    float: right;
+    margin-right: 14%;
+    width: 55%;
+}
+
+@media only screen and (min-width : 1500px) {
+
+    #bgimg{
+        display: block;
+        width: 100%;
+        height: 655px;
+        position: absolute;
+        top:0;
+        left: 0;
+        z-index: -1;
+    }
+    .aboutland{
+        background: none;
+    }
+}
+@media only screen and (max-width: 990px) {
+    .abttext{
+        width: 80%;
+    }
+    .aboutland{
+        height: 400px;
+    }
+    .ourstory{
+        flex-direction: column;
+        align-items: center;
+    }
+    #story2{
+        flex-direction: column-reverse;
+    }
+    .story{
+        width: 80%;
+    }
+    .store2{
+        margin-top: 0;
+    }
+    #img4{
+        width:90%;
+    }
+    .whatwe{
+        padding-top: 100px;
+    }
+    #rope2{
+        margin-top: 0px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .story{
+        padding-top: 50px;
+    }
+    .aboutland{
+        background-size: 122%;
+        
+    }
+    
+}

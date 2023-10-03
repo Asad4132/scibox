@@ -1,0 +1,92 @@
+
+.home{
+    text-align: center;
+    color: white;
+    font-style: normal;
+    padding-top: 100px;
+    background-color: #000000;
+}
+.quality-assurance{
+    height: max-content;
+    width: 100%;
+    justify-content: space-evenly;
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   flex-direction: row;
+   background-color: #000000;
+   color: white;
+   margin-top: -50px;
+   padding-top: 100px;
+   }
+   .quality{
+       width: 40%;
+       height: max-content;
+       
+   }
+   .item1{
+    width: 30%;
+   }
+   .hire{
+    background: radial-gradient(100% 100% at 0% 0%, #0F1010 0%, #070707 100%) ;/* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+box-shadow: inset -5px -5px 250px rgba(255, 255, 255, 0.02);
+backdrop-filter: blur(21px);
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    color: white;
+    padding-top: 100px;
+    border: 2px solid #FFFFFF66;
+    margin-top: 50px;
+    cursor: pointer;
+    transition: all .4s;
+    -moz-transition: all .4s;
+    -webkit-transition:all .4s;
+    -o-transition: all .4s;
+   }
+  .hire:hover{
+    transform: scale(1.01);
+  }
+
+  .arrow{
+    color: #51ADE5;
+    font-size: 40px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: none;
+    
+  }
+
+.hire1:hover #arrow1{
+    display: block;
+}
+.hire2:hover #arrow2{
+    display: block;
+}
+.hire3:hover #arrow3{
+    display: block;
+}
+.hire4:hover #arrow4{
+    display: block;
+}
+.hire5:hover #arrow5{
+    display: block;
+}
+.hire6:hover #arrow6{
+    display: block;
+}
+
+   @media only screen and (max-width: 990px) {
+
+
+    .quality-assurance{
+        flex-direction: column;
+    }
+    .quality{
+        width: 80%;
+    }
+#hireimg{
+    width: 80%;
+}
+   }

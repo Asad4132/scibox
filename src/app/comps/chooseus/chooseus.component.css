@@ -1,0 +1,159 @@
+#bgimg{
+    display: none;
+}
+.aboutland{
+    left: 0px;
+    top: 0px;
+    height: 655px;
+    background:  url('/assets/chbg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.abttext{
+    color: white;
+    margin-left: 10%;
+    padding-top: 10%;
+    width: 40%;
+}
+
+.ourstory{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: max-content;
+    background-color: #000000;
+ align-items: center;
+}
+.story{
+    width: 35%;
+    color: white;
+}
+.accomp{
+    padding-top: 100px;
+    text-align: center;
+    color: white;
+    background: radial-gradient(100% 100% at 0% 0%, #0F1010 0%, #070707 100%);
+    box-shadow: inset -5px -5px 250px rgb(255 255 255 / 2%);
+    width: 80%;
+    margin: auto;
+}
+#numb{
+    font-weight: 400;
+font-size: 40px;
+    color: #51ADE5;
+}
+.acc3{
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+.acc{
+    width: 25%;
+}
+#cl{
+    padding-left: 10%;
+}
+.advantage{
+    text-align: center;
+}
+.adv{
+    width: 30%;
+    margin: 10px;
+}
+.hire{
+    background: radial-gradient(100% 100% at 0% 0%, #0F1010 0%, #070707 100%) ;/* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+box-shadow: inset -5px -5px 250px rgba(255, 255, 255, 0.02);
+backdrop-filter: blur(21px);
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    color: white;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-top: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+   }
+   .hr{
+    width: 40%;
+    text-align: left;
+   }
+   #adv{
+    padding-bottom: 10px;
+   }
+   #adv:hover{
+    transform: scale(1.1);
+  }
+  .btnhire{
+    border: 1.5px solid #FFFFFF;
+border-radius: 0px;
+color: #FFFFFF;
+padding-left: 20px;
+padding-right: 20px;
+  }
+
+  @media only screen and (min-width : 1500px) {
+
+    #bgimg{
+        display: block;
+        width: 100%;
+        height: 655px;
+        position: absolute;
+        top:0;
+        left: 0;
+        z-index: -1;
+    }
+    .aboutland{
+        background: none;
+    }
+}
+@media only screen and (max-width: 990px) {
+    .abttext{
+        width: 80%;
+    }
+    .aboutland{
+        height: 400px;
+    }
+    .ourstory{
+        flex-direction: column;
+        align-items: center;
+    }
+    .story{
+        width: 80%;
+    }
+.acc3{
+    flex-direction: column;
+    align-items: center;
+}
+.acc{
+    width: 80%;
+    margin: 20px;
+}
+.hire{
+    flex-direction: column;
+    align-items: center;
+}
+.hr{
+    width: 100%;
+}
+#hireimg{
+    width: 100%;
+}
+}
+
+@media only screen and (max-width: 600px) {
+    .story{
+        padding-top: 50px;
+    }
+    .aboutland{
+        background-size: 122%;
+        
+    }
+    
+}

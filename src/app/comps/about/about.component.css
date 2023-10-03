@@ -1,0 +1,191 @@
+.navbar-nav > .active > a {
+    color: red;
+}
+#bgimg{
+    display: none;
+}
+.aboutland{
+    left: 0px;
+    top: 0px;
+    height: 655px;
+    background:  url('/assets/abtbg.png');
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+.abttext{
+    color: white;
+    margin-left: 10%;
+    padding-top: 10%;
+    width: 40%;
+}
+.ourstory{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: max-content;
+    background-color: #000000;
+
+}
+.story{
+    padding-top: 100px;
+    width: 40%;
+    color: white;
+}
+.st2{
+    padding-right: 10%;
+    padding-top: 10%;
+}
+.provide{
+    background-color: #000000;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+#elli{
+    position: absolute;
+    width: 81%;
+    margin-left: -42%;
+    z-index: 9;
+}
+.prov{
+    height: max-content;
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    color: white;
+z-index: 99;
+}
+#prvhead{
+    padding-top: 100px;
+    color: white;
+    z-index: 99;
+}
+.pro{
+    width: 500px;
+}
+#o1{
+
+/*margin-left: -400px; */
+position: absolute;
+margin-left: -256px;
+margin-top: -25px;
+}
+#o2{
+    position: absolute;
+    margin-left: -200px;
+    margin-top: -23px;
+}
+.quality-assurance{
+    height: max-content;
+    width: 100%;
+    justify-content: space-around;
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   flex-direction: row;
+   background-color: #000000;
+   color: white;
+   padding-top: 100px;
+   }
+   .quality{
+       width: 40%;
+       height: max-content;
+       
+   }
+.prmob{
+    display: none;
+}
+@media only screen and (min-width : 1500px) {
+
+    #bgimg{
+        display: block;
+        width: 100%;
+        height: 655px;
+        position: absolute;
+        top:0;
+        left: 0;
+        z-index: -1;
+    }
+    .aboutland{
+        background: none;
+    }
+}
+@media only screen and (min-width : 1700px) {
+#elli{
+    position: absolute;
+    width: 61%;
+    margin-left: -28%;
+    z-index: 9;
+}
+
+
+}
+@media only screen and (max-width: 1300px) {
+#elli{
+    position: absolute;
+    width: 96%;
+    margin-left: -48%;
+    z-index: 9;
+}
+}
+@media only screen and (max-width: 990px) {
+.ourstory{
+    flex-direction: column;
+    align-items: center;
+}
+.abttext{
+    width: 80%;
+}
+.story{
+    width: 80%;
+}
+.st2{
+
+    padding-right: 0;
+}
+.aboutland{
+    height: 400px;
+}
+.prov{
+    flex-direction: column;
+    align-items: center;
+}
+#elli{
+    width: none;
+    margin-left: none;
+    height: 770px;
+}
+.quality-assurance{
+    flex-direction: column;
+}
+.quality{
+    width: 80%;
+}
+.prmob{
+    display: block;
+}
+.prcom{
+    display: none;
+}
+}
+@media only screen and (max-width: 600px) {
+
+.aboutland{
+    height: 173px;
+    background-size: 122%;
+    
+}
+
+.st1{
+    padding-top: 180px;
+}
+.pro{
+    width: 90%;
+    height: max-content;
+}
+#o1{
+    margin-left: -297px;
+}
+}
