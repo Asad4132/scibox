@@ -7,7 +7,7 @@ import { EmailService } from 'src/app/email.service';
   styleUrls: ['./footer2.component.css']
 })
 export class Footer2Component implements OnInit {
-vid="Attach Video";
+vid="Attach Video (Up to: 25MB)";
 vid2="Attach Your Sample";
 file2 = '';
 shortLink1: any;
@@ -76,7 +76,7 @@ submits(login:any){
                    // console.log('Link', this.shortLink2)
                     const msg = "Service: "+this.service1+"<br>  Name: "+this.names+"<br>  Email: "+this.emails+"<br>  Phone: "+this.phones+"<br>  Comments: "+this.descs+"<br>  Sample-link: "+this.shortLink1+"<br>  Video-link: "+this.shortLink2;
     this.mails.mail2(msg).subscribe((resp:any)=>{
-      alert("Thanks for contacting us! We will be in touch with you shortly.");
+      alert("Thank you! And congratulations on the commencement of your pursuit of aspirations! Will contact you promptly.");
     window.location.reload();
       // console.log(resp);
       }),(error:any)=>{
@@ -102,7 +102,7 @@ submits(login:any){
 
               const msg = "Service: "+this.service1+"<br>  Name: "+this.names+"<br>  Email: "+this.emails+"<br>  Phone: "+this.phones+"<br>  Comments: "+this.descs+"<br>  Video-link: "+this.shortLink2;
               this.mails.mail2(msg).subscribe((resp:any)=>{
-                alert("Thanks for contacting us! We will be in touch with you shortly.");
+                alert("Thank you! And congratulations on the commencement of your pursuit of aspirations! Will contact you promptly.");
               window.location.reload();
                 // console.log(resp);
                 }),(error:any)=>{
@@ -123,7 +123,7 @@ submits(login:any){
               this.shortLink1 = event.link;
               const msg = "Service: "+this.service1+"<br>  Name: "+this.names+"<br>  Email: "+this.emails+"<br>  Phone: "+this.phones+"<br>  Comments: "+this.descs+"<br>  Sample-link: "+this.shortLink1;
               this.mails.mail2(msg).subscribe((resp:any)=>{
-                alert("Thanks for contacting us! We will be in touch with you shortly.");
+                alert("Thank you! And congratulations on the commencement of your pursuit of aspirations! Will contact you promptly.");
               window.location.reload();
                 // console.log(resp);
                 }),(error:any)=>{
@@ -139,7 +139,7 @@ submits(login:any){
     //console.log('both files null')
     const msg = "Service: "+this.service1+"<br>  Name: "+this.names+"<br>  Email: "+this.emails+"<br>  Phone: "+this.phones+"<br>  Comments: "+this.descs;
     this.mails.mail2(msg).subscribe((resp:any)=>{
-      alert("Thanks for contacting us! We will be in touch with you shortly.");
+      alert("Thank you! And congratulations on the commencement of your pursuit of aspirations! Will contact you promptly.");
     window.location.reload();
       // console.log(resp);
       }),(error:any)=>{

@@ -8,10 +8,10 @@ export class EmailService {
   constructor(private http: HttpClient) { }
 
   mail(entry:any){
-    return this.http.post('https://thescibox.com/Mail/mail2.php',entry, { responseType: 'text' })
+    return this.http.post('https://thescibox.com/mail/mail2.php',entry, { responseType: 'text' })
   }
 
   mail2(entry:any){
-    return this.http.post('https://thescibox.com/Mail/mail3.php',entry, { responseType: 'text' })
+    return this.http.post('https://thescibox.com/mail/mail3.php',entry, { responseType: 'text' })
   }
 }

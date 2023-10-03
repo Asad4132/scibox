@@ -1,3 +1,52 @@
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Privacy Policy</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>At THE SciBOX, we understand that privacy is a top concern for our clients and we are committed to protecting the personal information and data that they share with us. In this policy, we outline the types of information we collect, the purposes for which we use it, and the measures we take to secure and protect it.<br>
+
+<br><b>Information Collection and Use</b><br><br>
+
+In the course of providing our services, we may collect a variety of personal information from our clients. This information may include, but is not limited to, their name, contact information, payment information, and other information necessary to provide our services.
+
+We use this information to provide and improve our services, process payments, respond to client inquiries, and for other purposes related to our business. We may also use this information to send clients promotional offers or other communications related to our services.
+
+<br><br><b>Data Storage and Security</b><br><br>
+
+We take the storage and security of our clients' data very seriously. All client data is stored on secure servers protected by industry-standard security measures, such as encryption and firewalls. Access to this data is limited to authorised employees who need it to perform their job functions.
+
+<br><br><b>Data Sharing and Access</b><br><br>
+
+We do not sell or share our clients' personal information with third parties, except as required by law or as necessary to provide our services. For example, we may share information with service providers who help us process payments or provide customer support.
+
+Clients have the right to access and update their personal information at any time by contacting us. If a client would like to request deletion of their personal information, we will take steps to delete it in accordance with applicable law and our internal policies.
+
+<br><br><b>Data Retention</b><br><br>
+
+We retain client data for as long as necessary to provide our services and fulfil our legal obligations. When client data is no longer required, we securely delete it in accordance with our internal policies and procedures.
+
+<br><br><b>Data Breaches</b><br><br>
+
+In the unlikely event of a data breach, we will promptly notify affected clients and take all necessary steps to secure their data and prevent future breaches. We have robust security measures in place to detect and respond to data breaches, and will take all necessary steps to minimise the impact on our clients.
+
+<br><br><b>Contact Us</b><br><br>
+
+If you have any questions or concerns about this privacy policy, or if you would like to access or update your personal information, please contact us at support@thescibox.com We are committed to working with our clients to ensure their privacy and security.
+
+<br><br><b>Effective Date: 13 February 2023</b><br><br>
+
+This privacy policy may be updated periodically to reflect changes in our practices or applicable laws. We will notify clients of any material changes and provide them with an updated policy. We encourage our clients to periodically review this policy to stay informed about how we are protecting their personal information and data.<br><br>
+
+If any section or part of privacy policy of THE SciBOX clashes with any section or part of privacy policy of your company’s, kindly let us know and we’ll do whatever needed to resolve the issue.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
 <footer id="formss footer2">
     <form #forms = "ngForm" (ngSubmit)="submits(forms)">
     <div class="forms">
@@ -11,21 +60,22 @@
 <img src="/assets/double.png" alt="" srcset=""><br><br>
 <p id="med">Medical Writer</p>
 <input type="checkbox" name="" id="check" (change)="toggleEditable($event)" value="medical writer">
-</div>
-<div class="med scribe">
-    <img src="/assets/double.png" alt="" srcset=""><br><br>
-    <p id="med">Medical Scribe</p>
-    <input type="checkbox" name="" id="check" (change)="toggleEditable($event)" value="Medical Scribe">
-</div>
-<div class="med writer3">
-    <img src="/assets/double.png" alt="" srcset=""><br><br>
-    <p id="med">Call Representative</p>
-    <input type="checkbox" name="" id="check" (change)="toggleEditable($event)" value="Call Representative">
-</div>
-</div>
+        </div>
+        <div class="med writer2">
+            <img src="/assets/double.png" alt="" srcset=""><br><br>
+            <p id="med">Medical Scribe</p>
+            <input type="checkbox" name="" id="check" (change)="toggleEditable($event)" value="Medical Scribe">
+        </div>
+        <div class="med writer3">
+            <img src="/assets/double.png" alt="" srcset=""><br><br>
+            <p id="med">Call Representative</p>
+            <input type="checkbox" name="" id="check" (change)="toggleEditable($event)" value="Call Representative">
+        </div>
+    <div> <p class="error" *ngIf=" forms.touched && !contentEditable==true">Please select a service</p></div>
+    </div>
     <input type="text" ngModel #name="ngModel" [(ngModel)]="names" required minlength="3" name="name" id="name" placeholder="First Name">
     <p class="error errm" *ngIf="forms.touched && name.invalid">Name is Invalid</p>
-    <input ngModel #email="ngModel" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" [(ngModel)]="emails" type="text" name="company" id="company" placeholder="Email">
+    <input ngModel #email="ngModel" required pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$" [(ngModel)]="emails" type="text" name="company" id="company" placeholder="Email">
     <p class="error errm" *ngIf="forms.touched && email.invalid">Email is Invalid</p>
     <input type="number" ngModel #cnumber="ngModel" [(ngModel)]="phones" minlength="7" required name="cnumber" id="cnumber" placeholder="Contact Number">
     <p class="error errm" *ngIf="forms.touched && cnumber.invalid">Phone# is Invalid</p>
@@ -36,7 +86,7 @@
     <!--<input type="file" id="vid" (change)="onChange($event)" accept="video/*" style="display:none;"/>
     <label id="lab" for="vid"> <img src="/assets/attachvid.png" alt="" srcset="">{{vid}}</label>
     <input type="file" id="vid2" (change)="onChange2($event)" accept="Image/*" style="display:none;"/>
-    <label id="lab2" for="vid2"> <img src="/assets/attachvid.png" alt="" srcset="">{{vid2}}</label> -->
+    <label id="lab2" for="vid2"> <img src="/assets/attachvid.png" alt="" srcset="">{{vid2}}</label> --> 
     <textarea name="desc" id="desc" ngModel #desc="ngModel" [(ngModel)]="descs" cols="30" rows="6" placeholder="Any Comments(Optional)"></textarea>
     <div class="privacy">
 <p class="pp ptext">Your data is protected within our organization. We handle your information with care and only share it internally and with potential employers as needed, ensuring your privacy and security.

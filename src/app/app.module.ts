@@ -45,7 +45,7 @@ import { LocationStrategy, HashLocationStrategy, PathLocationStrategy} from '@an
     HttpClientModule
   ],
   providers: [
-    {provide: LocationStrategy,useClass: HashLocationStrategy }
+    {provide: LocationStrategy,useClass: PathLocationStrategy}
 ],
   bootstrap: [AppComponent]
 })

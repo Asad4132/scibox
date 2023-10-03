@@ -41,20 +41,19 @@ loading1 = true;
 }
 }
   submits(login:any){
-    
-    if(!login.invalid && this.contentEditable){
+   if(!login.invalid && this.contentEditable){
       //console.log("Footer 1")
       this.loading1 = false;
       const msg = "Service: "+this.service1+"<br>  Name: "+this.names+"<br>  Email: "+this.emails+"<br>  Phone: "+this.phones+"<br>  Project Desciption: "+this.descs;
       this.mails.mail(msg).subscribe((resp:any)=>{
         //console.log(resp);
-        alert("Thanks for contacting us! We will be in touch with you shortly.");
+        alert("Thank you! And congratulations on the commencement of your pursuit of aspirations! Will contact you promptly.");
       window.location.reload();
         }),(error:any)=>{
           console.log(error);
         }
       
-    }
+    } 
 
-  }
+  }  
 }
